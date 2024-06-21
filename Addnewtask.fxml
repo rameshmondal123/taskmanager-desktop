@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane fx:id="contentpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.newjavafxproject.HelloController">
+    <center>
+        <Pane prefHeight="417.0" prefWidth="659.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+            <Label layoutX="25.0" layoutY="42.0" text="Task Title" />
+            <TextField fx:id="Description" layoutX="149.0" layoutY="38.0" prefHeight="26.0" prefWidth="405.0" />
+            <Label layoutX="26.0" layoutY="128.0" text="Description" />
+            <TextArea fx:id="DetailsArea" layoutX="149.0" layoutY="79.0" prefHeight="170.0" prefWidth="406.0" />
+            <DatePicker fx:id="Deadline" layoutX="149.0" layoutY="270.0" />
+            <Label layoutX="25.0" layoutY="274.0" prefHeight="17.0" prefWidth="54.0" text="Deadline" />
+            <Button fx:id="Exit" layoutX="456.0" layoutY="319.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="89.0" text="Cancel" />
+            <Button layoutX="352.0" layoutY="319.0" mnemonicParsing="false" onAction="#handleSaveTask" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: D1E4F9;" text="OK" />
+         <MenuButton layoutX="391.0" layoutY="271.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="161.0" text="Categories">
+           <items>
+             <MenuItem mnemonicParsing="false" text="Important" />
+             <MenuItem mnemonicParsing="false" text="Meeting" />
+               <MenuItem mnemonicParsing="false" text="Regular" />
+           </items>
+         </MenuButton>
+        </Pane>
+    </center>
+</BorderPane>
